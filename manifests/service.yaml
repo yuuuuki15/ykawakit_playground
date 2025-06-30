@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: playground
-  namespace: dev
+    name: wil-playground-svc
 spec:
-  selector:
-    app: playground
-  ports:
-  - protocol: TCP
-    port: 8888
-    targetPort: 8888
+    selector:
+        app.kubernetes.io/name: playground
+    ports:
+        - name: app-svc-port
+          protocol: TCP
+          port: 8888
+          targetPort: http-app-svc
