@@ -1,0 +1,13 @@
+app_name: wil-playground
+app_label: playground
+
+container:
+  image: wil42/playground
+  tag: v1
+  port:
+    name: http-playground
+    number: 8888
+
+servicePort:
+  name: http-svc
+  number: 8888
