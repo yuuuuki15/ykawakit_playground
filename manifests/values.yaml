@@ -3,7 +3,7 @@ app_label: playground
 
 container:
   image: wil42/playground
-  tag: v1
+  tag: v2
   port:
     name: http-playground
     number: 8888
